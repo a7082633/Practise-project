@@ -1,0 +1,61 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: cplusplus_1 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\zxx\AppData\Local\Temp\RSP805E.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Debug/" /Fp"Debug/cplusplus_1.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\C++\cplusplus_1\MyIostream.cpp"
+]
+Creating command line "cl.exe @C:\Users\zxx\AppData\Local\Temp\RSP805E.tmp" 
+Creating temporary file "C:\Users\zxx\AppData\Local\Temp\RSP805F.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/cplusplus_1.pdb" /debug /machine:I386 /out:"Debug/cplusplus_1.exe" /pdbtype:sept 
+".\Debug\CCircle.obj"
+".\Debug\CFigure.obj"
+".\Debug\CPoint.obj"
+".\Debug\CStack.obj"
+".\Debug\CString.obj"
+".\Debug\Date.obj"
+".\Debug\dynamicCstack.obj"
+".\Debug\jicheng.obj"
+".\Debug\MyIostream.obj"
+".\Debug\Stu.obj"
+".\Debug\Student.obj"
+".\Debug\TemplateFun.obj"
+]
+Creating command line "link.exe @C:\Users\zxx\AppData\Local\Temp\RSP805F.tmp"
+<h3>Output Window</h3>
+Compiling...
+MyIostream.cpp
+Linking...
+Creating temporary file "C:\Users\zxx\AppData\Local\Temp\RSP811B.tmp" with contents
+[
+/nologo /o"Debug/cplusplus_1.bsc" 
+".\Debug\CCircle.sbr"
+".\Debug\CFigure.sbr"
+".\Debug\CPoint.sbr"
+".\Debug\CStack.sbr"
+".\Debug\CString.sbr"
+".\Debug\Date.sbr"
+".\Debug\dynamicCstack.sbr"
+".\Debug\jicheng.sbr"
+".\Debug\MyIostream.sbr"
+".\Debug\Stu.sbr"
+".\Debug\Student.sbr"
+".\Debug\TemplateFun.sbr"]
+Creating command line "bscmake.exe @C:\Users\zxx\AppData\Local\Temp\RSP811B.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+cplusplus_1.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MFC_MiniQQ_V1 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\zxx\AppData\Local\Temp\RSP6E12.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/MFC_MiniQQ_V1.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\c++\MFC_MiniQQ_V1\MFC_MiniQQ_V1.cpp"
+]
+Creating command line "cl.exe @C:\Users\zxx\AppData\Local\Temp\RSP6E12.tmp" 
+Creating temporary file "C:\Users\zxx\AppData\Local\Temp\RSP6E13.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/MFC_MiniQQ_V1.pdb" /debug /machine:I386 /out:"Debug/MFC_MiniQQ_V1.exe" /pdbtype:sept 
+".\Debug\ChatDialog.obj"
+".\Debug\MFC_MiniQQ_V1.obj"
+".\Debug\MFC_MiniQQ_V1Dlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\MFC_MiniQQ_V1.res"
+]
+Creating command line "link.exe @C:\Users\zxx\AppData\Local\Temp\RSP6E13.tmp"
+<h3>Output Window</h3>
+Compiling...
+MFC_MiniQQ_V1.cpp
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/MFC_MiniQQ_V1.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\ChatDialog.sbr" ".\Debug\MFC_MiniQQ_V1.sbr" ".\Debug\MFC_MiniQQ_V1Dlg.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+MFC_MiniQQ_V1.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

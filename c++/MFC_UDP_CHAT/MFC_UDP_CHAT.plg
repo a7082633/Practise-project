@@ -1,0 +1,30 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MFC_UDP_CHAT - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\zxx\AppData\Local\Temp\RSP8158.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/MFC_UDP_CHAT.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ   /c 
+"D:\c++\MFC_UDP_CHAT\MFC_UDP_CHATDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\zxx\AppData\Local\Temp\RSP8158.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:yes /pdb:"Debug/MFC_UDP_CHAT.pdb" /debug /machine:I386 /out:"Debug/MFC_UDP_CHAT.exe" /pdbtype:sept  ".\Debug\MFC_UDP_CHAT.obj" ".\Debug\MFC_UDP_CHATDlg.obj" ".\Debug\StdAfx.obj" ".\Debug\MFC_UDP_CHAT.res" "
+<h3>Output Window</h3>
+Compiling...
+MFC_UDP_CHATDlg.cpp
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/MFC_UDP_CHAT.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\MFC_UDP_CHAT.sbr" ".\Debug\MFC_UDP_CHATDlg.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+MFC_UDP_CHAT.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

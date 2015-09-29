@@ -1,0 +1,62 @@
+#include <Winsock2.h>
+#include <stdio.h>
+#pragma comment (lib,"Ws2_32.lib")
+
+void main()
+{
+	//初始化套接字库	WSAStartup(1,1)
+	WSADATA WSAData;
+	if(WSAStartup(1,&WSAData)!=0)
+	{
+		printf("初始化套接字库失败！\n");
+		return;
+	}
+	//创建套接字	sockSvr = socket(SOCK_DGRAM)
+	SOCKET	socksrv;
+	socksrv = socket(AF_INET, SOCK_DGRAM, 0);
+	if (INVALID_SOCKET == socksrv)
+	{
+		printf("创建套接字失败！\n");
+		WSACleanup();
+		return;
+	}
+	//绑定套接字到端口	bind(6001)
+	SOCKADDR_IN addr={0};
+	addr.sin_family=AF_INET;
+	addr.sin_port=0x1234;
+	addr.sin_addr.S_un.S_addr=0;
+	if(SOCKET_ERROR==::bind(socksrv,(sockaddr *)&addr,sizeof(sockaddr)))
+	{
+		printf("绑定套接字失败！\n");
+		closesocket(socksrv);
+		WSACleanup();
+		return;
+	}
+	//接受客户端数据
+	char bufRev[100]={0};
+	SOCKADDR_IN addrfrm={0};
+//	addrfrm.sin_family=AF_INET;
+//	addrfrm.sin_port=0x1234;
+//	addrfrm.sin_addr.S_un.S_addr=0;
+	int len=sizeof(SOCKADDR_IN);
+	int nstr=recvfrom(socksrv,bufRev,100,0,(sockaddr *)&addrfrm,&len);
+	if(nstr>0)
+	{
+		//printf("我说1111111：");
+		bufRev[nstr]='\0';
+		printf("%s说: %s\n",inet_ntoa(addrfrm.sin_addr),bufRev);
+	}
+	//发数据到客户端
+	char bufSend[100]={0};
+	printf("我说：");
+	gets(bufSend);
+	if(SOCKET_ERROR==sendto(socksrv,bufSend,strlen(bufSend),0,(sockaddr *)&addrfrm,sizeof(SOCKADDR_IN)))
+	{
+		printf("发送失败!");
+	}
+	//关闭套接字	
+	closesocket(socksrv);
+	//释放套接字库资源	
+	WSACleanup();
+
+}

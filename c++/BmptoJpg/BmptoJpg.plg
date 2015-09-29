@@ -1,0 +1,58 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: BmptoJpg - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\zxx\AppData\Local\Temp\RSPFCC7.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/BmptoJpg.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"C:\Users\zxx\Desktop\BmpToJpg-master\BmpToJpg-master\jpgPro\Jpge.cpp"
+]
+Creating command line "cl.exe @C:\Users\zxx\AppData\Local\Temp\RSPFCC7.tmp" 
+Creating temporary file "C:\Users\zxx\AppData\Local\Temp\RSPFCC8.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/BmptoJpg.pdb" /debug /machine:I386 /out:"Debug/BmptoJpg.exe" /pdbtype:sept 
+".\Debug\BmpImage.obj"
+".\Debug\Jpge.obj"
+".\Debug\main.obj"
+]
+Creating command line "link.exe @C:\Users\zxx\AppData\Local\Temp\RSPFCC8.tmp"
+<h3>Output Window</h3>
+Compiling...
+Jpge.cpp
+C:\Users\zxx\Desktop\BmpToJpg-master\BmpToJpg-master\jpgPro\Jpge.cpp(17) : error C2258: illegal pure syntax, must be '= 0'
+C:\Users\zxx\Desktop\BmpToJpg-master\BmpToJpg-master\jpgPro\Jpge.cpp(17) : error C2252: 'density' : pure specifier can only be specified for functions
+C:\Users\zxx\Desktop\BmpToJpg-master\BmpToJpg-master\jpgPro\Jpge.cpp(20) : error C2252: 'thum_x' : pure specifier can only be specified for functions
+C:\Users\zxx\Desktop\BmpToJpg-master\BmpToJpg-master\jpgPro\Jpge.cpp(21) : error C2252: 'thum_y' : pure specifier can only be specified for functions
+C:\Users\zxx\Desktop\BmpToJpg-master\BmpToJpg-master\jpgPro\Jpge.cpp(33) : error C2258: illegal pure syntax, must be '= 0'
+C:\Users\zxx\Desktop\BmpToJpg-master\BmpToJpg-master\jpgPro\Jpge.cpp(33) : error C2252: 'sampling' : pure specifier can only be specified for functions
+C:\Users\zxx\Desktop\BmpToJpg-master\BmpToJpg-master\jpgPro\Jpge.cpp(40) : error C2258: illegal pure syntax, must be '= 0'
+C:\Users\zxx\Desktop\BmpToJpg-master\BmpToJpg-master\jpgPro\Jpge.cpp(40) : error C2252: 'accuracy' : pure specifier can only be specified for functions
+C:\Users\zxx\Desktop\BmpToJpg-master\BmpToJpg-master\jpgPro\Jpge.cpp(43) : error C2258: illegal pure syntax, must be '= 0'
+C:\Users\zxx\Desktop\BmpToJpg-master\BmpToJpg-master\jpgPro\Jpge.cpp(43) : error C2252: 'color' : pure specifier can only be specified for functions
+C:\Users\zxx\Desktop\BmpToJpg-master\BmpToJpg-master\jpgPro\Jpge.cpp(57) : error C2258: illegal pure syntax, must be '= 0'
+C:\Users\zxx\Desktop\BmpToJpg-master\BmpToJpg-master\jpgPro\Jpge.cpp(57) : error C2252: 'color' : pure specifier can only be specified for functions
+C:\Users\zxx\Desktop\BmpToJpg-master\BmpToJpg-master\jpgPro\Jpge.cpp(85) : error C2065: 'sqrt' : undeclared identifier
+C:\Users\zxx\Desktop\BmpToJpg-master\BmpToJpg-master\jpgPro\Jpge.cpp(100) : error C2065: 'cos' : undeclared identifier
+C:\Users\zxx\Desktop\BmpToJpg-master\BmpToJpg-master\jpgPro\Jpge.cpp(104) : error C2374: 'u' : redefinition; multiple initialization
+        C:\Users\zxx\Desktop\BmpToJpg-master\BmpToJpg-master\jpgPro\Jpge.cpp(94) : see declaration of 'u'
+C:\Users\zxx\Desktop\BmpToJpg-master\BmpToJpg-master\jpgPro\Jpge.cpp(399) : error C2039: 'sampling' : is not a member of 'colorInfo'
+        C:\Users\zxx\Desktop\BmpToJpg-master\BmpToJpg-master\jpgPro\Jpge.cpp(31) : see declaration of 'colorInfo'
+C:\Users\zxx\Desktop\BmpToJpg-master\BmpToJpg-master\jpgPro\Jpge.cpp(399) : error C2039: 'sampling' : is not a member of 'colorInfo'
+        C:\Users\zxx\Desktop\BmpToJpg-master\BmpToJpg-master\jpgPro\Jpge.cpp(31) : see declaration of 'colorInfo'
+C:\Users\zxx\Desktop\BmpToJpg-master\BmpToJpg-master\jpgPro\Jpge.cpp(399) : error C2039: 'sampling' : is not a member of 'colorInfo'
+        C:\Users\zxx\Desktop\BmpToJpg-master\BmpToJpg-master\jpgPro\Jpge.cpp(31) : see declaration of 'colorInfo'
+C:\Users\zxx\Desktop\BmpToJpg-master\BmpToJpg-master\jpgPro\Jpge.cpp(586) : error C2664: 'void __thiscall std::basic_ofstream<char,struct std::char_traits<char> >::open(const char *,int)' : cannot convert parameter 1 from 'class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >' to 'const char *'
+        No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+BmptoJpg.exe - 19 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

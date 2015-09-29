@@ -1,0 +1,52 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: sanzi - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\zxx\AppData\Local\Temp\RSP1FB4.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/sanzi.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\c++\sanzi\Testtt.cpp"
+]
+Creating command line "cl.exe @C:\Users\zxx\AppData\Local\Temp\RSP1FB4.tmp" 
+Creating temporary file "C:\Users\zxx\AppData\Local\Temp\RSP1FB5.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/sanzi.pdb" /debug /machine:I386 /out:"Debug/sanzi.exe" /pdbtype:sept 
+".\Debug\big_mul.obj"
+".\Debug\date.obj"
+".\Debug\digui.obj"
+".\Debug\File_.obj"
+".\Debug\hanshu.obj"
+".\Debug\kmp.obj"
+".\Debug\LinkList.obj"
+".\Debug\mima.obj"
+".\Debug\mimaR.obj"
+".\Debug\MyCopy.obj"
+".\Debug\Myprint.obj"
+".\Debug\point_1.obj"
+".\Debug\reallytest.obj"
+".\Debug\str.obj"
+".\Debug\struct.obj"
+".\Debug\studentmanager.obj"
+".\Debug\systemtime.obj"
+".\Debug\test.obj"
+".\Debug\wuzi.obj"
+".\Debug\yinyong.obj"
+".\Debug\Testtt.obj"
+]
+Creating command line "link.exe @C:\Users\zxx\AppData\Local\Temp\RSP1FB5.tmp"
+<h3>Output Window</h3>
+Compiling...
+Testtt.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+sanzi.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

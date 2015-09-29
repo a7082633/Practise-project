@@ -1,0 +1,56 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MFC_SDI - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\zxx\AppData\Local\Temp\RSP6789.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/MFC_SDI.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\c++\MFC_SDI\MainFrm.cpp"
+"D:\c++\MFC_SDI\MFC_SDI.cpp"
+"D:\c++\MFC_SDI\MFC_SDIDoc.cpp"
+"D:\c++\MFC_SDI\MFC_SDIView.cpp"
+]
+Creating command line "cl.exe @C:\Users\zxx\AppData\Local\Temp\RSP6789.tmp" 
+Creating temporary file "C:\Users\zxx\AppData\Local\Temp\RSP678A.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/MFC_SDI.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\c++\MFC_SDI\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\zxx\AppData\Local\Temp\RSP678A.tmp" 
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+MainFrm.cpp
+MFC_SDI.cpp
+MFC_SDIDoc.cpp
+MFC_SDIView.cpp
+Generating Code...
+Creating temporary file "C:\Users\zxx\AppData\Local\Temp\RSP69BD.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/MFC_SDI.pdb" /machine:I386 /out:"Release/MFC_SDI.exe" 
+".\Release\MainFrm.obj"
+".\Release\MFC_SDI.obj"
+".\Release\MFC_SDIDoc.obj"
+".\Release\MFC_SDIView.obj"
+".\Release\StdAfx.obj"
+".\Release\MFC_SDI.res"
+]
+Creating command line "link.exe @C:\Users\zxx\AppData\Local\Temp\RSP69BD.tmp"
+<h3>Output Window</h3>
+Linking...
+Creating command line "bscmake.exe /nologo /o"Release/MFC_SDI.bsc"  ".\Release\StdAfx.sbr" ".\Release\MainFrm.sbr" ".\Release\MFC_SDI.sbr" ".\Release\MFC_SDIDoc.sbr" ".\Release\MFC_SDIView.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+MFC_SDI.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

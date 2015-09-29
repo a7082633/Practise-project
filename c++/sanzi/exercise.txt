@@ -1,0 +1,165 @@
+	for(int i=100;i<200;i++)
+	{
+		bool flag=true;
+		for(int j=2;j<i;j++)
+		{
+			if(i%j==0)
+			{
+				flag=false;
+				break;
+			}
+		}
+		if(flag)
+		{
+			printf("%d\n",i);
+		}
+		flag=true;
+	}
+
+
+	for(int i=1;i<=9;i++)
+	{
+		for(int j=1;j<=i;j++)
+		{
+			printf("%d * %d = %2d ",j,i,j*i);
+		}
+		printf("\n");
+	}
+
+	
+	for(int i=0;i<=33;i++)
+		for(int j=0;j<=100;j++)
+			for(int k=0;k<=100;k++)
+				if(i+j+k==100&&i*3+j*1+k*(1/3.0)==100)
+				{
+					printf("%d %d %d\n",i,j,k);
+				}
+
+////////////////////////////////////////////////////////////////日期天数
+
+#include <stdio.h>
+#include <string.h>
+
+
+#define Isleap(a) (a%100 == 0)?((a%400 == 0)?(true):(false)):((a%4 == 0)?(true):(false))
+
+void do_days(int *a,int month,int year,int day)
+{
+	switch(month)
+	{
+	case 1:	case 3:	case 5:	case 7:	case 8:	case 10:	case 12:
+		{
+			*a=*a+day;
+			break;
+		}
+	case 4:	case 6:	case 9:	case 11:
+		{
+			*a=*a+day;
+			break;
+		}
+	case 2:
+		{
+			if(Isleap(year))
+				*a=*a+day;
+			else
+				*a=*a+day;
+			break;
+		}
+	default:
+		break;
+	}
+}
+void do_month(int *a,int year,int month)
+{
+	for(int j=1;j<month;j++)
+	{
+		switch(j)
+		{
+		case 1:		case 3:		case 5:		case 7:		case 8:		case 10:		case 12:
+			{
+				*a+=31;
+				break;
+			}
+		case 4:		case 6:		case 9: 	case 11:
+			{
+				*a+=30;
+				break;
+			}
+		case 2:
+			{
+				if(Isleap(year))
+					*a+=29;
+				else
+					*a+=28;
+				break;
+			}
+		default:
+			break;
+		}	
+	}
+}
+int  cacaulator(int year,int month,int days,int year2,int month2,int days2)
+{
+	int temp=year2-year;
+	int temp2=0;
+	for(int i=year;i<year2;i++)
+	{
+		if(Isleap(i))
+		{
+			temp2+=366;
+			printf("year %d temp2 %d\n",year,temp2);
+		}
+		else
+		{
+			temp2+=365;
+			printf("year %d temp2 %d\n",year,temp2);
+		}
+	}
+	int subdays=0;
+	do_month(&subdays,year,month);///////////////  第一日期的月多加天数
+	int adddays=0;
+	do_month(&adddays,year2,month2);///////////////////////// 第二日期月少加的天数
+	do_days(&subdays,month,year,days);//////////////////第一日期多加的天数
+	do_days(&adddays,month2,year2,days2);/////////////////第二日期少加的天数
+	return temp2-subdays+adddays;
+}
+bool IsLeagDate(int year,int month,int day)
+{
+	bool y=false,m=false,d=false;
+	if(year<=0)  return false;
+	if(year>9999) return false;
+	return true;
+}
+void main()
+{
+	int year=0;
+	int month=0;
+	int day=0;
+	int m=0;
+	do
+	{
+		fflush(stdin);
+		printf("plz input date(yyyy-mm-dd):");
+		m=scanf("%d-%d-%d",&year,&month,&day);
+	}
+	while(m!=3);
+	printf("%d %d %d %d\n",year,month,day,m);
+	printf("%d\n",cacaulator(1999,9,1,2014,8,24));
+}
+
+
+/////////////////////////////////memeryset
+void MyMemSet(int *p,int v,int t)
+{
+	for(int i=0;i<t;i++)
+	{
+		*p++=v;
+	}
+}
+void MyMemSet(short *p,int v,int t)
+{
+	for(int i=0;i<t;i++)
+	{
+		*p++=v;
+	}
+}

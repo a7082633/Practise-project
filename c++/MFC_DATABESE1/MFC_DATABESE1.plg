@@ -1,0 +1,29 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MFC_DATABESE1 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/MFC_DATABESE1.res" /d "_DEBUG" /d "_AFXDLL" "D:\c++\MFC_DATABESE1\MFC_DATABESE1.rc"" 
+Creating temporary file "C:\Users\zxx\AppData\Local\Temp\RSPF36F.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/MFC_DATABESE1.pdb" /debug /machine:I386 /out:"Debug/MFC_DATABESE1.exe" /pdbtype:sept 
+".\Debug\MFC_DATABESE1.obj"
+".\Debug\MFC_DATABESE1Dlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\MFC_DATABESE1.res"
+]
+Creating command line "link.exe @C:\Users\zxx\AppData\Local\Temp\RSPF36F.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+MFC_DATABESE1.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

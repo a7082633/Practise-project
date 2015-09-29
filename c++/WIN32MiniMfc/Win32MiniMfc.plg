@@ -1,0 +1,32 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Win32MiniMfc - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\zxx\AppData\Local\Temp\RSP1108.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Win32MiniMfc___Win32_Debug/Win32MiniMfc.pch" /YX /Fo"Win32MiniMfc___Win32_Debug/" /Fd"Win32MiniMfc___Win32_Debug/" /FD /GZ /c 
+"D:\c++\WIN32MiniMfc\MiniMFC.cpp"
+]
+Creating command line "cl.exe @C:\Users\zxx\AppData\Local\Temp\RSP1108.tmp" 
+Creating temporary file "C:\Users\zxx\AppData\Local\Temp\RSP1119.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Win32MiniMfc___Win32_Debug/Win32MiniMfc.pdb" /debug /machine:I386 /out:"Win32MiniMfc___Win32_Debug/Win32MiniMfc.exe" /pdbtype:sept 
+".\Win32MiniMfc___Win32_Debug\MiniMFC.obj"
+]
+Creating command line "link.exe @C:\Users\zxx\AppData\Local\Temp\RSP1119.tmp"
+<h3>Output Window</h3>
+Compiling...
+MiniMFC.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+Win32MiniMfc.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
