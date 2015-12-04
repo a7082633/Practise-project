@@ -13,16 +13,16 @@ Class2=CMFC_MiniQQ_V2Dlg
 Class3=CAboutDlg
 
 ResourceCount=7
-Resource1=IDD_DIALOG_LOGIN
+Resource1=IDD_MFC_MINIQQ_V2_DIALOG
 Resource2=IDR_MAINFRAME
-Resource3=IDD_ABOUTBOX
+Resource3=IDD_DIALOG_CHAT
 Class4=CLoginDialog
 Class5=CMySocket
-Resource4=IDD_MFC_MINIQQ_V2_DIALOG
+Resource4=IDD_DIALOG_LOGIN
 Class6=CChatDialog
-Resource5=IDD_DIALOG_CHARROOM
+Resource5=IDD_ABOUTBOX
 Class7=CChatRoomDialog
-Resource6=IDD_DIALOG_CHAT
+Resource6=IDD_DIALOG_CHARROOM
 Resource7=IDR_MENU
 
 [CLS:CMFC_MiniQQ_V2App]

@@ -20,6 +20,18 @@ void main()
 		WSACleanup();
 		return;
 	}
+//	char *ppp="hello\r\n""yes";
+//	printf("%s",ppp);
+	// 列出一个域名的所有IP地址
+//	hostent* pHost = gethostbyname("localhost");
+//	if(pHost != NULL)
+//	{
+//		while(*pHost->h_addr_list != NULL)
+//		{
+//			printf("IP:%s\n", inet_ntoa(*(struct in_addr *)*pHost->h_addr_list));
+//			*pHost->h_addr_list++;
+//		}
+//	}
 	//绑定套接字到端口
 	SOCKADDR_IN skaddr={0};
 	skaddr.sin_port=0x1234;

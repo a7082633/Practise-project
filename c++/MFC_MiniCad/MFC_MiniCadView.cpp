@@ -205,6 +205,7 @@ void CMFC_MiniCadView::OnDrawNone()
 void CMFC_MiniCadView::OnDrawLine() 
 {
 	// TODO: Add your command handler code here
+	//this->MessageBox("line");
 	m_nType=1;
 }
 
@@ -255,14 +256,15 @@ void CMFC_MiniCadView::OnUpdateDrawEill(CCmdUI* pCmdUI)
 void CMFC_MiniCadView::OnUpdateDrawColor(CCmdUI* pCmdUI) 
 {
 	// TODO: Add your command update UI handler code here
-	pCmdUI->SetCheck(m_nType==3);
+	pCmdUI->SetCheck(m_nType==2);
+	//this->MessageBox("test1");
 	//this->MessageBox("nul");
 }
 
 void CMFC_MiniCadView::OnDrawColor() 
 {
 	// TODO: Add your command handler code here
-	this->MessageBox("test");
+	//this->MessageBox("test2");
 }
 
 int CMFC_MiniCadView::OnCreate(LPCREATESTRUCT lpCreateStruct) 
@@ -271,7 +273,7 @@ int CMFC_MiniCadView::OnCreate(LPCREATESTRUCT lpCreateStruct)
 		return -1;
 	
 	// TODO: Add your specialized creation code here
-	this->GetParent()->GetMenu()->GetSubMenu(4)->RemoveMenu(5,MF_BYPOSITION);
+	//this->GetParent()->GetMenu()->GetSubMenu(4)->RemoveMenu(5,MF_BYPOSITION);
 	return 0;
 }
 

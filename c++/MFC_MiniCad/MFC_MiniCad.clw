@@ -2,7 +2,7 @@
 
 [General Info]
 Version=1
-LastClass=CAboutDlg
+LastClass=CMFC_MiniCadView
 LastTemplate=CDialog
 NewFileInclude1=#include "stdafx.h"
 NewFileInclude2=#include "MFC_MiniCad.h"
@@ -42,7 +42,7 @@ ImplementationFile=MFC_MiniCadView.cpp
 Filter=C
 BaseClass=CView
 VirtualFilter=VWC
-LastObject=ID_BTN_COLOR
+LastObject=ID_DRAW_LINE
 
 
 [CLS:CMainFrame]
@@ -50,7 +50,7 @@ Type=0
 HeaderFile=MainFrm.h
 ImplementationFile=MainFrm.cpp
 Filter=T
-LastObject=ID_FILE_OPEN
+LastObject=ID_DRAW_LINE
 BaseClass=CFrameWnd
 VirtualFilter=fWC
 

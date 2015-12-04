@@ -335,7 +335,7 @@ int Do_DES(char* strSrc, char* strKey, char* strDest, char flag)
   return 0;
 }
  
-//做3DES加密或解密运算
+//做3DES加密或解密运算flag=D 是解密，E是加密
 int Do_3DES(char* strSrc, char* strKey, char* strDest, char flag)
 { 
    char strBCDKey[32+1];

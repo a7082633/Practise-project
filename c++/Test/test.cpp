@@ -1,13 +1,20 @@
 
 #include "des.h"
+#include "stdio.h"
+#include <iostream>
+#include <errno.h>
 //#include <afx.h>
-
+using namespace std;
+void fn(int *b)
+{   
+	std::cout<<(*b)++;
+}
 int main()
 {
-	int a=248, b=4;
-	int const c=21;
-	const int *d=&a;
-	int *const e=&b;
+
+	int a=7;
+	fn(&a);
+	std::cout<<a;
 //	int const *f const =&a;
 //	e=32;
 //	3DES
@@ -37,7 +44,7 @@ int main()
 //	try
 //	{
 //		CString strData;
-//		char *requestUrl="http:221.176.197.13:8011/Api!DeviceIdentify.do?account=test&password=111111&macno=000011&samno=123456";
+//		char *requestUrl="http:221.176.197.13:8011/Api!DeviceIdentify.doaccount=test&password=111111&macno=000011&samno=123456";
 //		CHttpFile *pFile;
 //		pFile = (CHttpFile *) m_session.OpenURL(requestUrl);
 //		DWORD Code;

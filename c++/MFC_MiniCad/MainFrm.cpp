@@ -21,7 +21,6 @@ BEGIN_MESSAGE_MAP(CMainFrame, CFrameWnd)
 	//{{AFX_MSG_MAP(CMainFrame)
 	ON_WM_CREATE()
 	ON_WM_TIMER()
-	ON_COMMAND(ID_DRAW_COLOR, OnDrawColor)
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
 
@@ -156,8 +155,3 @@ void CMainFrame::OnTimer(UINT nIDEvent)
 //DEL }
 
 
-void CMainFrame::OnDrawColor() 
-{
-	// TODO: Add your command handler code here
-	
-}

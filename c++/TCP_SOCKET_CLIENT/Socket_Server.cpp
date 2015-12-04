@@ -36,6 +36,8 @@ void main()
 	//接受服务端数据	recv(sockClient) 阻塞
 	while(1)
 	{
+//		int nNetTimeout=3000;//1秒，
+//		setsockopt(sockClient,SOL_SOCKET,SO_RCVTIMEO, (char *)&nNetTimeout,sizeof(int));
 		char bufrev[20]={0};
 		int nstr=::recv(sockClient,bufrev,sizeof(bufrev),0);
 		if(nstr>0)

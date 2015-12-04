@@ -13,13 +13,13 @@ Class2=CMFC_MINIQQDlg
 Class3=CAboutDlg
 
 ResourceCount=6
-Resource1=IDD_CHAT_DLG
+Resource1=IDD_ABOUTBOX
 Resource2=IDR_MAINFRAME
-Resource3=IDD_MFC_MINIQQ_DIALOG
+Resource3=IDD_CHAT_DLG
 Class4=CLoginDlg
 Resource4=IDD_DIALOG1
 Class5=CChatDialog
-Resource5=IDD_ABOUTBOX
+Resource5=IDD_MFC_MINIQQ_DIALOG
 Class6=CMyButton
 Class7=CCCCCCCCCC
 Class8=CMyWinThread
@@ -88,7 +88,7 @@ HeaderFile=LoginDlg.h
 ImplementationFile=LoginDlg.cpp
 BaseClass=CDialog
 Filter=C
-LastObject=IDC_BUTTON_B1
+LastObject=IDD_MENU_ZI
 VirtualFilter=dWC
 
 [DLG:IDD_CHAT_DLG]
