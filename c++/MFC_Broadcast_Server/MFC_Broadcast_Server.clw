@@ -2,7 +2,7 @@
 
 [General Info]
 Version=1
-LastClass=CDialogSendMSG
+LastClass=CMFC_Broadcast_ServerDlg
 LastTemplate=CDialog
 NewFileInclude1=#include "stdafx.h"
 NewFileInclude2=#include "MFC_Broadcast_Server.h"
@@ -13,10 +13,10 @@ Class2=CMFC_Broadcast_ServerDlg
 Class3=CAboutDlg
 
 ResourceCount=5
-Resource1=IDD_MFC_BROADCAST_SERVER_DIALOG
+Resource1=IDD_DIALOG_SENGMSG
 Resource2=IDR_MAINFRAME
-Resource3=IDD_DIALOG_SENGMSG
-Resource4=IDD_ABOUTBOX
+Resource3=IDD_ABOUTBOX
+Resource4=IDD_MFC_BROADCAST_SERVER_DIALOG
 Class4=CDialogSendMSG
 Resource5=IDR_MENU_LIST
 
@@ -33,7 +33,7 @@ ImplementationFile=MFC_Broadcast_ServerDlg.cpp
 Filter=C
 BaseClass=CDialog
 VirtualFilter=dWC
-LastObject=CMFC_Broadcast_ServerDlg
+LastObject=IDC_LIST
 
 [CLS:CAboutDlg]
 Type=0

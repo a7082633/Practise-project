@@ -5,16 +5,9 @@
 #include <errno.h>
 //#include <afx.h>
 using namespace std;
-void fn(int *b)
-{   
-	std::cout<<(*b)++;
-}
 int main()
 {
 
-	int a=7;
-	fn(&a);
-	std::cout<<a;
 //	int const *f const =&a;
 //	e=32;
 //	3DES

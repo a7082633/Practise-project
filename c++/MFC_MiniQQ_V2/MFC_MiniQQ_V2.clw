@@ -13,16 +13,16 @@ Class2=CMFC_MiniQQ_V2Dlg
 Class3=CAboutDlg
 
 ResourceCount=7
-Resource1=IDD_MFC_MINIQQ_V2_DIALOG
+Resource1=IDD_DIALOG_CHAT
 Resource2=IDR_MAINFRAME
-Resource3=IDD_DIALOG_CHAT
+Resource3=IDD_MFC_MINIQQ_V2_DIALOG
 Class4=CLoginDialog
 Class5=CMySocket
-Resource4=IDD_DIALOG_LOGIN
+Resource4=IDD_ABOUTBOX
 Class6=CChatDialog
-Resource5=IDD_ABOUTBOX
+Resource5=IDD_DIALOG_CHARROOM
 Class7=CChatRoomDialog
-Resource6=IDD_DIALOG_CHARROOM
+Resource6=IDD_DIALOG_LOGIN
 Resource7=IDR_MENU
 
 [CLS:CMFC_MiniQQ_V2App]
@@ -114,7 +114,7 @@ ImplementationFile=ChatDialog.cpp
 BaseClass=CDialog
 Filter=D
 VirtualFilter=dWC
-LastObject=IDC_EDIT_SELECT
+LastObject=IDR_SHOWWD
 
 [DLG:IDD_DIALOG_CHARROOM]
 Type=1
