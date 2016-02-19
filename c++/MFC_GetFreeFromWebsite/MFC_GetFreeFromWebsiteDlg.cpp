@@ -393,7 +393,7 @@ DWORD WINAPI CMFC_GetFreeFromWebsiteDlg::ScanThread(LPVOID lpParameter)
 				//SOCKET_ERROR
 				memset(UnCompressBuffer,0,UNCOMPRESS_BUFFER_LEN);
 				unsigned long len=UNCOMPRESS_BUFFER_LEN;
-				char *p=strstr(Rcvbuf,"utf-8");
+				char *p=strstr(Rcvbuf,"\r\n\r\n");
 				char *pStart=strstr(Rcvbuf,"Content-Length");
 				pStart+=15;
 				char *pEnd=strstr(pStart,"\r\n");
@@ -406,7 +406,7 @@ DWORD WINAPI CMFC_GetFreeFromWebsiteDlg::ScanThread(LPVOID lpParameter)
 				strm.zfree = Z_NULL;
 				strm.opaque = Z_NULL;
 				strm.avail_in = LenOfCompress;
-				strm.next_in = (unsigned char *)p+9;
+				strm.next_in = (unsigned char *)p+4;
 				strm.avail_out = len;
 				strm.next_out = (unsigned char * ) UnCompressBuffer;
 				int ret= inflateInit2(&strm, 47);
@@ -562,6 +562,10 @@ void CMFC_GetFreeFromWebsiteDlg::OnShowwd()
 
 void CMFC_GetFreeFromWebsiteDlg::OnExit() 
 {
+	if(this->m_hThread)
+	{
+		this->m_hThread=NULL;
+	}
 	TrayDelete();
 	closesocket(m_sockServer);
 	WSACleanup();
