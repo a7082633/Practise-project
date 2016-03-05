@@ -10,17 +10,12 @@
 using namespace std;
 int main()
 {
-	int *pa=NULL;
-	int *pb=pa+15;
-	char c=0xff;
-	//printf("%X",c);//测试十六进制用的输出语句，unsigned为原字符串，有符号则为4字节FF。
-	const int i=1;
-	int *p=(int *)&i;
-	*p=2;
-	printf("%d",i);//测试十六进制用的输出语句，unsigned为原字符串，有符号则为4字节FF。
-
-	//Get_Rectangle(10);//输出螺旋矩阵
-
+	Node *head=NULL;
+	for(int i=0;i<10;i++)
+		AddToTail(head,i);
+	//DeleteNode(head,2);
+	//ReverseList(head);
+	RecursionPrintList(head);
 //	char a[2]={0x90,0x80};
 //	char b[10]={0};
 //	sprintf(b,"%c",a[0]);

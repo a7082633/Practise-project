@@ -6,23 +6,6 @@
 --------------------Configuration: MFC_MiniQQ_V2 - Win32 Release--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating command line "rc.exe /l 0x804 /fo"Release/MFC_MiniQQ_V2.res" /d "NDEBUG" /d "_AFXDLL" "D:\c++\MFC_MiniQQ_V2\MFC_MiniQQ_V2.rc"" 
-Creating temporary file "C:\Users\zxx\AppData\Local\Temp\RSP6381.tmp" with contents
-[
-/nologo /subsystem:windows /incremental:no /pdb:"Release/MFC_MiniQQ_V2.pdb" /machine:I386 /out:"Release/MFC_MiniQQ_V2.exe" 
-".\Release\ChatDialog.obj"
-".\Release\ChatRoomDialog.obj"
-".\Release\LoginDialog.obj"
-".\Release\MFC_MiniQQ_V2.obj"
-".\Release\MFC_MiniQQ_V2Dlg.obj"
-".\Release\MySocket.obj"
-".\Release\StdAfx.obj"
-".\Release\MFC_MiniQQ_V2.res"
-]
-Creating command line "link.exe @C:\Users\zxx\AppData\Local\Temp\RSP6381.tmp"
-<h3>Output Window</h3>
-Compiling resources...
-Linking...
 
 
 

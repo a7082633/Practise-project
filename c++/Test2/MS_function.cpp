@@ -37,3 +37,131 @@ void Get_Rectangle(int n)
 	}
 	system("pause");
 }
+//µİ¹é1+2+3+n
+int digui1(int n)
+{
+	if(n==1)
+		return 1;
+	return n+digui1(n-1);
+}
+//µİ¹é1*2*3*n
+int digui2(int n)
+{
+	if(n==1)
+		return 1;
+	return n*digui2(n-1);
+}
+//ì³²¨ÄÇÆõ
+int digui3(int n)
+{
+	if(n<=1)
+		return 1;
+	return digui3(n-1)+digui3(n-2);
+}
+void digui4(char *p,char *q)
+{
+	if(*p!=*q)
+	{
+		printf("no");
+		return;
+	}
+	if(p>=q && *p==*q)
+	{
+		printf("yes");
+		return;
+	}
+	digui4(p+1,q-1);
+}
+//Á´±í»ù±¾²Ù×÷
+struct Node
+{
+	int Data;
+	Node *next;
+};
+void AddToTail(Node *&head,int e)
+{
+	if(head==NULL)
+	{
+		head=(Node *)malloc(sizeof(Node));
+		head->Data=e;
+		head->next=NULL;
+		return;
+	}
+	Node *p=head;
+	while(p->next)
+		p=p->next;
+	Node *pNew=(Node *)malloc(sizeof(Node));
+	pNew->Data=e;
+	pNew->next=NULL;
+	p->next=pNew;
+	return;
+}
+void PrintList(Node *head)
+{
+	if(head==NULL)
+	{
+		return;
+	}
+	Node *p=head;
+	while(p)
+	{
+		printf("%d\n",p->Data);
+		p=p->next;
+	}
+	return;
+}
+void RecursionPrintList(Node *head)
+{
+	if(head==NULL)
+		return;
+	printf("%d\n",head->Data);
+	RecursionPrintList(head->next);
+	return;
+}
+void DeleteNode(Node *&head,int e)
+{
+	if(head==NULL)
+		return;
+	Node *temp=NULL;
+	if(head->Data==e)
+	{
+		temp=head;
+		head=head->next;
+		free(temp);
+		return;
+	}
+	Node *p=head;
+	Node *q=head->next;
+	while(q)
+	{
+		if(q->Data==e)
+		{
+			temp=q;
+			p->next=q->next;
+			free(temp);
+			return;
+		}
+		p=p->next;
+		q=q->next;
+	}
+	return;
+}
+void ReverseList(Node *&head)
+{
+	if(head==NULL||head->next==NULL)
+		return;
+	Node *p1=head;
+	Node *p2=p1->next;
+	Node *p3=p2->next;
+	head->next=NULL;
+	while(p2->next)
+	{
+		p2->next=p1;
+		p1=p2;
+		p2=p3;
+		p3=p3->next;//
+	}
+	p2->next=p1;
+	head=p2;
+	return;
+}
